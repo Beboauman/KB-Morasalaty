@@ -1045,3 +1045,51 @@ body.ltr .requirement-list li:before {
   right: auto;
   left: 0;
 }
+
+/* --- Responsive Enhancements for Mobile Devices --- */
+@media (max-width: 480px) {
+  .template-types {
+    display: flex;
+    flex-direction: column;
+    overflow-x: unset;
+    white-space: normal;
+    padding-bottom: 0;
+    gap: 1rem;
+  }
+  .template-type {
+    display: block;
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+    margin: 0 0 1rem 0;
+    box-sizing: border-box;
+  }
+  .steps-list {
+    padding: 1rem;
+    font-size: 0.95rem;
+    overflow-x: auto;
+    word-break: break-word;
+  }
+  .example-box, .important-note {
+    padding: 1rem;
+    font-size: 0.95rem;
+    overflow-x: auto;
+    word-break: break-word;
+  }
+  .content-text {
+    word-break: break-word;
+  }
+  .example-box img, .important-note img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+
+/* General responsive image rule */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
