@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتائج البحث - مراسلاتي</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">مراسلاتي</a>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="templates.html">النماذج</a></li>
+                        <li><a href="#campaigns">الحملات</a></li>
+                        <li><a href="#automation">الأتمتة</a></li>
+                        <li><a href="#integration">التكامل</a></li>
+                        <li><a href="#sop">دليل الموظف</a></li>
+                        <li><a href="#faq">الأسئلة الشائعة</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="lang-toggle" onclick="toggleLanguage()">English</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="index.html" class="breadcrumb-link">الرئيسية</a>
+                <span class="breadcrumb-separator">></span>
+                <span class="breadcrumb-current">نتائج البحث</span>
+            </nav>
+
+            <!-- Search Bar -->
+            <div class="search-container search-results-bar">
+                <div class="search-box">
+                    <input type="text" id="searchInput" class="search-input" placeholder="ابحث في قاعدة المعرفة..." autocomplete="off">
+                    <button type="button" class="search-button" onclick="performSearch()" title="بحث" aria-label="بحث">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Search Results -->
+            <div class="search-results-section">
+                <div class="search-info">
+                    <h1 class="search-title">نتائج البحث عن: "<span id="searchQuery"></span>"</h1>
+                    <p class="search-count">تم العثور على <span id="resultsCount">0</span> نتيجة</p>
+                </div>
+
+                <div id="searchResults" class="search-results-list">
+                    <!-- Search results will be populated here by JavaScript -->
+                </div>
+
+                <div id="noResults" class="no-results" style="display: none;">
+                    <div class="no-results-icon">🔍</div>
+                    <h2 class="no-results-title">لم يتم العثور على نتائج</h2>
+                    <p class="no-results-text">جرب استخدام كلمات مختلفة أو تحقق من الإملاء</p>
+                    <div class="search-suggestions-help">
+                        <h3>اقتراحات للبحث:</h3>
+                        <ul>
+                            <li>استخدم كلمات أكثر عمومية</li>
+                            <li>تحقق من الإملاء</li>
+                            <li>جرب مرادفات مختلفة</li>
+                            <li>استخدم كلمات أقل في البحث</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/search-data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

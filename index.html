@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مراسلاتي - قاعدة المعرفة</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">مراسلاتي</a>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="templates.html">النماذج</a></li>
+                        <li><a href="#campaigns">الحملات</a></li>
+                        <li><a href="#automation">الأتمتة</a></li>
+                        <li><a href="#integration">التكامل</a></li>
+                        <li><a href="#sop">دليل الموظف</a></li>
+                        <li><a href="#faq">اسأل سؤالك</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="lang-toggle" onclick="toggleLanguage()">English</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="welcome-section" id="welcome-section">
+                <h1 class="welcome-title">مرحباً بك في قاعدة معرفة مراسلاتي</h1>
+                <p class="welcome-subtitle">
+                    دليلك الشامل للتعرف على خدمات النظام وإجراءات العمل. اكتشف كيفية استخدام منصة مراسلاتي بكفاءة وفعالية.
+                </p>
+                
+                <!-- Search Section -->
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" class="search-input" placeholder="ابحث في قاعدة المعرفة..." autocomplete="off">
+                        <button type="button" class="search-button" onclick="performSearch()" title="بحث" aria-label="بحث">
+                            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="search-suggestions" id="searchSuggestions"></div>
+                </div>
+            </section>
+
+            <section class="services-grid">
+                <a href="templates.html" class="service-card" id="templates-service">
+                    <div class="service-icon">🔖</div>
+                    <h3 class="service-title">النماذج</h3>
+                    <p class="service-description">
+                        تعرف على أنواع النماذج المختلفة وكيفية إنشائها واستخدامها في حملاتك التسويقية والخدمية.
+                    </p>
+                </a>
+
+                <a href="#campaigns" class="service-card" id="campaigns-service">
+                    <div class="service-icon">📢</div>
+                    <h3 class="service-title">الحملات التسويقية</h3>
+                    <p class="service-description">
+                        دليل شامل لإنشاء وإدارة الحملات التسويقية الفعالة عبر منصة مراسلاتي.
+                    </p>
+                </a>
+
+                <a href="#automation" class="service-card" id="automation-service">
+                    <div class="service-icon">🤖</div>
+                    <h3 class="service-title">شجرة الرد الالي</h3>
+                    <p class="service-description">
+                        تعلم كيفية إعداد الردود الآلية وأتمتة العمليات لتحسين كفاءة خدمة العملاء.
+                    </p>
+                </a>
+
+                <a href="#integration" class="service-card" id="integration-service">
+                    <div class="service-icon">⚙️</div>
+                    <h3 class="service-title">الربط البرمجي</h3>
+                    <p class="service-description">
+                        اكتشف كيفية ربط مراسلاتي مع الأنظمة والتطبيقات الأخرى لتحقيق أقصى استفادة.
+                    </p>
+                </a>
+
+                <a href="#sop" class="service-card" id="sop-service">
+                    <div class="service-icon">📋</div>
+                    <h3 class="service-title">دليل الموظف</h3>
+                    <p class="service-description">
+                        إجراءات العمل المعيارية والتوجيهات اللازمة لاستخدام النظام بشكل صحيح.
+                    </p>
+                </a>
+
+                <a href="#faq" class="service-card" id="faq-service">
+                    <div class="service-icon">❓</div>
+                    <h3 class="service-title">اسأل سؤالك</h3>
+                    <p class="service-description">
+                        إجابات على الأسئلة حول استخدام منصة مراسلاتي وخدماتها.
+                    </p>
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

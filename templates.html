@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>النماذج - مراسلاتي</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">مراسلاتي</a>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="templates.html">النماذج</a></li>
+                        <li><a href="#campaigns">الحملات</a></li>
+                        <li><a href="#automation">الأتمتة</a></li>
+                        <li><a href="#integration">التكامل</a></li>
+                        <li><a href="#sop">دليل الموظف</a></li>
+                        <li><a href="#faq">اسأل سؤالك</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="lang-toggle" onclick="toggleLanguage()">English</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">نماذج الواتساب</h1>
+            <p class="page-subtitle">دليلك الشامل لفهم وإنشاء نماذج الواتساب بكفاءة</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <section class="content-section" id="templates-intro">
+                <h2 class="section-title">ما هي نماذج الواتساب؟</h2>
+                <p class="content-text">
+                    نماذج الواتساب هي رسائل جاهزة ومُعدة مسبقاً تم الموافقة عليها من شركة Meta (واتساب). 
+                    تُستخدم هذه النماذج لإرسال رسائل للعملاء خارج نافذة الـ 24 ساعة، أو لإرسال رسائل تلقائية 
+                    ورسائل تنبيهات مهمة. تساعد النماذج الشركات على التواصل مع عملائها بطريقة منظمة ومهنية.
+                </p>
+            </section>
+
+            <section class="content-section" id="template-types">
+                <h2 class="section-title">أنواع النماذج</h2>
+                <div class="template-types">
+                    
+                    <div class="template-type">
+                        <h4>تسويقي (Marketing)</h4>
+                        <p>
+                            تُستخدم للترويج للمنتجات والخدمات، إرسال العروض الخاصة، 
+                            والإعلان عن الأحداث والفعاليات.
+                        </p>
+                    </div>
+                    <div class="template-type">
+                        <h4>خدمي (Utility)</h4>
+                        <p>
+                            تُستخدم لتقديم معلومات مفيدة للعملاء مثل تحديثات الحساب، 
+                            إعدادات الأمان، وإشعارات النظام.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+          <!-- <section class="content-section" id="template-creation-steps">
+                <h2 class="section-title">خطوات إنشاء نموذج في نظام مراسلاتي</h2>
+                <div class="steps-list">
+                    <ol>
+                        <li>قم بتسجيل الدخول إلى حسابك في منصة مراسلاتي</li>
+                        <li>انتقل إلى قسم "النماذج" من القائمة الجانبية</li>
+                        <li>اضغط على زر "إنشاء نموذج جديد"</li>
+                        <li>اختر نوع النموذج (معلوماتي، تسويقي، أو خدمي)</li>
+                        <li>أدخل اسم النموذج باللغة الإنجليزية (بدون مسافات)</li>
+                        <li>اختر اللغة المناسبة للنموذج</li>
+                        <li>اكتب محتوى النموذج مع استخدام المتغيرات الديناميكية عند الحاجة</li>
+                        <li>أضف أزرار التفاعل إذا كانت مطلوبة</li>
+                        <li>راجع النموذج وتأكد من صحة المحتوى</li>
+                        <li>اضغط على "إرسال للمراجعة" لإرسال النموذج لموافقة Meta</li>
+                    </ol>
+                </div>
+            </section> -->
+
+            <div class="important-note" id="meta-policy">
+                <h4>ملاحظة مهمة حول سياسة Meta</h4>
+                <p>
+                    <strong>النماذج التسويقية:</strong> تخضع لمراجعة صارمة من Meta وقد تستغرق عملية الموافقة 
+                    من 24 إلى 48 ساعة. يجب أن يكون المحتوى التسويقي مفيداً وغير مزعج للمستخدمين. 
+                    تجنب استخدام كلمات مثل "مجاني"، "عرض محدود"، أو أي محتوى قد يُعتبر spam.
+                </p>
+                <p>
+                    <strong>النماذج المعلوماتية والخدمية:</strong> عادة ما تتم الموافقة عليها بشكل أسرع 
+                    لأنها تقدم معلومات مهمة للعملاء.
+                </p>
+            </div>
+
+            <section class="content-section" id="template-examples">
+                <h2 class="section-title">أمثلة على محتوى النماذج</h2>
+                
+                <h3 class="section-subtitle">مثال على نموذج معلوماتي - تأكيد الطلب:</h3>
+                <div class="example-box">
+                    مرحباً <span class="variable">{{1}}</span>،<br><br>
+                    تم تأكيد طلبك رقم <span class="variable">{{2}}</span> بنجاح!<br><br>
+                    تفاصيل الطلب:<br>
+                    - المنتج: <span class="variable">{{3}}</span><br>
+                    - الكمية: <span class="variable">{{4}}</span><br>
+                    - المبلغ الإجمالي: <span class="variable">{{5}}</span> ريال<br><br>
+                    سيتم التواصل معك قريباً لتأكيد عملية التسليم.<br><br>
+                    شكراً لثقتك بنا! 🙏
+                </div>
+
+                <h3 class="section-subtitle">مثال على نموذج تسويقي - عرض خاص:</h3>
+                <div class="example-box">
+                    مرحباً <span class="variable">{{1}}</span>،<br><br>
+                    نود إعلامك بعرضنا الجديد على <span class="variable">{{2}}</span><br><br>
+                    احصل على خصم <span class="variable">{{3}}</span>% عند الشراء خلال الأسبوع القادم.<br><br>
+                    العرض ساري حتى تاريخ <span class="variable">{{4}}</span><br><br>
+                    لا تفوت هذه الفرصة! 🎉
+                </div>
+
+                <h3 class="section-subtitle">مثال على نموذج خدمي - تذكير موعد:</h3>
+                <div class="example-box">
+                    عزيزي/عزيزتي <span class="variable">{{1}}</span>,<br><br>
+                    نذكرك بموعدك المحجوز معنا:<br><br>
+                    📅 التاريخ: <span class="variable">{{2}}</span><br>
+                    🕐 الوقت: <span class="variable">{{3}}</span><br>
+                    📍 المكان: <span class="variable">{{4}}</span><br><br>
+                    يرجى الحضور قبل الموعد بـ 15 دقيقة.<br><br>
+                    للإلغاء أو التأجيل، يرجى التواصل معنا.
+                </div>
+            </section>
+
+            <section class="content-section" id="template-tips">
+                <h2 class="section-title">نصائح مهمة لإنشاء النماذج</h2>
+                <div class="steps-list">
+                    <ul>
+                        <li>استخدم لغة واضحة ومهذبة</li>
+                        <li>تجنب الأخطاء الإملائية والنحوية</li>
+                        <li>لا تتجاوز 1024 حرف في النموذج الواحد</li>
+                        <li>استخدم المتغيرات الديناميكية لتخصيص الرسائل</li>
+                        <li>تأكد من أن المحتوى يقدم قيمة حقيقية للعميل</li>
+                        <li>اختبر النموذج قبل إرساله للمراجعة</li>
+                        <li>احتفظ بنسخة احتياطية من النماذج المهمة</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content-section" id="client-requirements">
+                <h2 class="section-title">✅ المتطلبات من العميل قبل بدء العمل على النموذج</h2>
+                
+                <div class="requirements-form">
+                    <div class="requirement-section">
+                        <h3 class="requirement-title">1. محتوى الهيدر (Header):</h3>
+                        <p class="requirement-question">هل الهيدر المطلوب:</p>
+                        <ul class="requirement-list">
+                            <li>صورة (امتداد: JPG أو JPEG)</li>
+                            <li>فيديو (امتداد: MP4 – الحد الأقصى للحجم: 20 ميجا)</li>
+                            <li>PDF</li>
+                        </ul>
+                        <p class="requirement-note">ملاحظة: تأكد من جودة ودقة المحتوى المرسل.</p>
+                    </div>
+
+                    <div class="requirement-section">
+                        <h3 class="requirement-title">2. النص الأساسي (Main Text) والمتغيرات:</h3>
+                        <p class="requirement-question">احصل من العميل على:</p>
+                        <ul class="requirement-list">
+                            <li>النص الكامل الذي يظهر للمستخدم</li>
+                            <li>قائمة المتغيرات الديناميكية المطلوبة داخل النص (مثل الاسم، رقم الطلب...)</li>
+                            <li>تنسيق النص (Bold / Italic / ألوان إن وجدت)</li>
+                        </ul>
+                    </div>
+
+                    <div class="requirement-section">
+                        <h3 class="requirement-title">3. الفوتر (Footer):</h3>
+                        <p class="requirement-question">هل سيتم استخدام نفس الفوتر السابق؟</p>
+                        <ul class="requirement-list">
+                            <li>نعم</li>
+                            <li>لا، هناك فوتر جديد (يرجى إرسال النص والتنسيق)</li>
+                        </ul>
+                    </div>
+
+                    <div class="requirement-section">
+                        <h3 class="requirement-title">4. الأزرار (Buttons):</h3>
+                        <p class="requirement-question">كم عدد الأزرار المطلوبة في النموذج؟ _____</p>
+                        
+                        <div class="button-details">
+                            <p class="requirement-question">لكل زرار:</p>
+                            <ul class="requirement-list">
+                                <li>نص الزر (Label)</li>
+                            </ul>
+                            
+                            <p class="requirement-question">نوع الإجراء (Action):</p>
+                            <ul class="requirement-list">
+                                <li>فتح رابط</li>
+                                <li>إجراء مخصص </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="requirement-section confirmation-section">
+                        <h3 class="requirement-title">5. التأكيد على العميل:</h3>
+                        <div class="confirmation-box">
+                            <p class="confirmation-text">
+                                <strong>برجاء العلم أنه بعد اعتماد النموذج لا يمكن إجراء أي تعديلات باستثناء ما يلي فقط:</strong>
+                            </p>
+                            <ul class="confirmation-list">
+                                <li>الهيدر (صورة / فيديو / PDF)</li>
+                                <li>المتغيرات داخل النص</li>
+                                <li>الإجراءات الخاصة بالأزرار</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section" id="360dialog-steps">
+                <h2 class="section-title">📋 القسم 2: خطوات إنشاء النموذج على 360Dialog</h2>
+                <p class="content-text">
+                    دليل مفصل لإنشاء النماذج على منصة 360Dialog مع الصور التوضيحية لكل خطوة
+                </p>
+
+                <div class="steps-list">
+                    <div class="requirement-section">
+                        <h3 class="requirement-title">1. افتح حساب العميل</h3>
+                        <p class="requirement-question">اذهب إلى: https://whatsapp.morasalaty.net/WABA</p>
+                        <div class="example-box">
+                          <img src="./Image/account.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="requirement-section">
+                        <h3 class="requirement-title">2. ابحث عن العميل في 360Dialog</h3>
+                        <p class="requirement-question">افتح: https://hub.360dialog.com/dashboard/partner/pipes</p>
+                        <p class="content-text">الصق رقم العميل؛ تأكد أنك داخل تبويب "WhatsApp Accounts – WABA"</p>
+                        <div class="example-box">
+                            <img src="./Image/360dialog.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="requirement-section">
+                        <h3 class="requirement-title">3. افتح صفحة العميل</h3>
+                        <p class="content-text">اضغط على الاسم عند ظهوره؛ سيتم الانتقال إلى ملفه الشخصي</p>
+                        <p class="content-text">من أعلى، اختر تبويب "Templates"</p>
+                        <div class="example-box">
+                            📸 Add image here
+                        </div>
+                    </div>
+
+                    <div class="requirement-section">
+                        <h3 class="requirement-title">4. ابدأ إنشاء النموذج</h3>
+                        <ul class="requirement-list">
+                            <li>إن كان جديدًا: انقر "Create Template"</li>
+                            <li>إن كان لديه نماذج سابقة: انقر "Add Template"</li>
+                        </ul>
+                        <div class="example-box">
+                            📸 Add image here
+                        </div>
+                    </div>
+
+                    <div class="requirement-section">
+                        <h3 class="requirement-title">5. املأ بيانات النموذج</h3>
+                        <p class="content-text"><strong>اسم النموذج:</strong> حرف صغير بالكامل (e.g. u_1008_15_7)</p>
+                        <p class="content-text"><strong>Category:</strong> اختر (Marketing / Utility / Authentication)</p>
+                        <div class="example-box">
+                            📸 Add image here
+                        </div>
+                    </div>
+
+                    <div class="requirement-section">
+                        <h3 class="requirement-title">6. حدد مكونات النموذج</h3>
+                        <p class="content-text">اختر ما تريد فعله:</p>
+                        <ul class="requirement-list">
+                            <li>Header ✅ <br> اختياري</li>
+                            <li>Body ✅ <br> اجباري</li>
+                            <li>Footer ✅ <br> اختياري</li>
+                            <li>Buttons ✅ <br> اختياري</li>>
+                        </ul>
+                        <div class="example-box">
+                            
+                        </div>
+                    </div>
+
+                    <div class="requirement-section">
+                        <h3 class="requirement-title">7. أضف أو عدّل الهيدر</h3>
+                        <p class="content-text">اختر نوع الهيدر (Image / Video / Document) حسب اختيار العميل</p>
+                        <div class="example-box">
+                            📸 Add image here
+                        </div>
+                    </div>
+
+                    <div class="requirement-section">
+                        <h3 class="requirement-title">8. اكتب نص الـBody بالشكل الصحيح</h3>
+                        <p class="content-text">أدخل النص الأصلي</p>
+                        
+                        <div class="important-note" id="template-rules">
+                            <h4>⚠️ قواعد مهمة للمتغيرات والتنسيق:</h4>
+                            <p><strong>عند المتغيرات لا تضعها متتابعة دون فاصل:</strong></p>
+                            <div class="template-types">
+                                <div class="template-type">
+                                    <h4>✅ صحيح</h4>
+                                    <p>{{1}} ⭐ {{2}}</p>
+                                </div>
+                                <div class="template-type" style="border-right-color: #d32f2f;">
+                                    <h4 style="color: #d32f2f;">❌ خطأ</h4>
+                                    <p>{{1}} {{2}}</p>
+                                </div>
+                            </div>
+                            
+                            <p><strong>لا تترك سطورًا فارغة متتابعة:</strong></p>
+                            <div class="template-types">
+                                <div class="template-type">
+                                    <h4>✅ صحيح</h4>
+                                    <p>"أهلاً وسهلاً 😊\nاضغط على الرابط."</p>
+                                </div>
+                                <div class="template-type" style="border-right-color: #d32f2f;">
+                                    <h4 style="color: #d32f2f;">❌ خطأ</h4>
+                                    <p>"أهلاً وسهلاً\n\nاضغط على الرابط."</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="example-box">
+                            📸 Add image here
+                        </div>
+                    </div>
+
+                    <div class="requirement-section">
+                        <h3 class="requirement-title">9. مراجعة نهائية وعرض النموذج</h3>
+                        <ul class="requirement-list">
+                            <li>تأكد من وجود جميع العناصر المطلوبة</li>
+                            <li>راجع التنسيق والمتغيرات بدقة</li>
+                            <li>تحقق من صحة الروابط والأزرار</li>
+                            <li>اختبر عرض النموذج قبل الإرسال</li>
+                        </ul>
+                        <div class="example-box">
+                            📸 Add image here
+                        </div>
+                    </div>
+                </div>
+
+                <div class="important-note" id="360dialog-notes">
+                    <h4>📝 ملاحظات مهمة لمنصة 360Dialog</h4>
+                    <ul>
+                        <li><strong>أسماء النماذج:</strong> يجب أن تكون بأحرف صغيرة فقط ولا تحتوي على مسافات</li>
+                        <li><strong>المتغيرات:</strong> تبدأ من {{1}} وتزيد تدريجياً {{2}}, {{3}} إلخ</li>
+                        <li><strong>الفئات:</strong> اختر الفئة المناسبة حسب نوع المحتوى (تسويقي، خدمي، أو مصادقة)</li>
+                        <li><strong>المراجعة:</strong> تأكد من مراجعة جميع العناصر قبل الإرسال للموافقة</li>
+                        <li><strong>الصور:</strong> تأكد من جودة الصور ومطابقتها لمتطلبات المنصة</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
